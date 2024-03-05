@@ -2,22 +2,23 @@ import './App.css';
 import Navbar from './MyComponents/Navbar';
 import Main from './MyComponents/Main';
 import About from './MyComponents/About';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Remove Switch
+//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Remove Switch
 
 
 function App() {
   
   return (
     <>
-    <Router>
+    {/* <Router> */}
       <div className="app-container">
         <Navbar title='HHC'/>
-        <Routes>
-          <Route path='/' element={<Main heading='Enter text for analyze'/>} />
-          <Route path='/About' element={<About/>} />
-        </Routes>
+        <Main heading='Enter text for analyze'/>
+        {/* <Routes> */}
+          {/* <Route path='/' element={<Main heading='Enter text for analyze'/>} /> */}
+          {/* <Route path='/About' element={<About/>} /> */}
+        {/* </Routes> */}
         </div>
-    </Router>
+    {/* </Router> */}
     </>
   )
 }
